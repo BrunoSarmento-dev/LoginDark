@@ -35,7 +35,7 @@ body * {
 }
 
 .dev-image {
-    width: 35vw;
+    width: 60%;
 }
 
 .right-content {
@@ -119,13 +119,13 @@ body * {
 
 }
 
-@media only screen and (max-width:950px) {
+@media screen and (max-width:950px) {
     .card-login {
         width: 85%;
     }
 }
 
-@media only screen and (max-width:600px) {
+@media screen and (max-width:600px) {
     .container {
         flex-direction: column;
     }
@@ -145,10 +145,28 @@ body * {
     }
 
     .dev-image {
-        width: 50vw;
+        max-height: 75%;
+        width: 75%;
+        margin-bottom: 8px;
     }
 
     .card-login {
         width: 90%;
+    }
+
+    @media screen and (min-width:1920px) {
+        .container {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .right-content {
+            width: 50vw;
+            height: 100vh;
+        }
+
+        .card-login {
+            height: 1200px;
+        }
     }
 }
